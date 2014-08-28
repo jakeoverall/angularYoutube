@@ -1,0 +1,25 @@
+{
+  "name": "angularYoutube",
+  "version": "0.0.0",
+  "homepage": "https://github.com/joverall22/angularYoutube",
+  "authors": [
+    "Jake Overall <joverall22@gmail.com>"
+  ],
+  "description": "small lightweight angular service for searching youtube",
+  "keywords": [
+    "angular",
+    "youtube"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.23"
+  }
+}

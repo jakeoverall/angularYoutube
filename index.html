@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="youtubeApp">
+<head>
+    <title>Angular YouTube</title>
+</head>
+<body ng-controller="searchCtrl">
+    <div>
+        <label for="searchYoutube">Search YouTube:</label>
+        <input id="searchYoutube" ng-model="query" />
+        <button ng-click="search()">Search</button>
+    </div>
+    <div>
+        <p ng-repeat="res in results">
+            <label>{{res.snippet.title}}</label>
+            <br/>
+            <a ng-href="https://www.youtube.com/watch?v={{res.id.videoId}}">
+                <img ng-src="{{res.snippet.thumbnails.high.url}}" />
+            </a>
+        </p>
+    </div>
+
+    <scripts>
+        <script src="bower_components/angular/angular.js"></script>
+
+        <!-- App Init -->
+        <script src="scripts/app.js"></script>
+
+        <!-- Services -->
+        <script src="scripts/services/youtubeService.js"></script>
+
+        <!-- Controllers -->
+        <script src="scripts/controllers/searchCtrl.js"></script>
+
+    </scripts>
+
+
+</body>
+</html>
